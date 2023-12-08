@@ -1,5 +1,5 @@
 //import mongoose
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 
 //route handler
@@ -19,4 +19,4 @@ const commentSchema = new mongoose.Schema({
 });
 
 //export
-module.exports = mongoose.model("Comment", commentSchema);
+export const Comment = mongoose.model("Comment", commentSchema);

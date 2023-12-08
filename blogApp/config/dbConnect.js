@@ -7,6 +7,6 @@ export const dbConnect = async() =>{
         console.log("DataBase Connected",ConnectionInstance.connection.host); 
         
     } catch (error) {
-        
+        console.log(`Error in DB Connection ${error}`);
     }
 }

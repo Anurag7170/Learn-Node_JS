@@ -1,5 +1,5 @@
 //import mongoose
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 
 //route handler
@@ -16,4 +16,4 @@ const likeSchema = new mongoose.Schema({
 });
 
 //export
-module.exports = mongoose.model("Like", likeSchema);
+export const Like = mongoose.model("Like", likeSchema);

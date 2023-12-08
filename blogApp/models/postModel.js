@@ -1,5 +1,6 @@
 //import mongoose
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 
 //route handler
@@ -26,4 +27,4 @@ const postSchema = new mongoose.Schema({
 
 
 //export
-module.exports = mongoose.model("Post", postSchema);
+export const Post = mongoose.model("Post", postSchema);
